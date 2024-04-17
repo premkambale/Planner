@@ -1,3 +1,4 @@
 module.exports = {
-    user_services:require("./auth.service")
+    auth_services:require("./auth_service/auth.service"),
+    user_services:require('./user_service/user.service')
 }

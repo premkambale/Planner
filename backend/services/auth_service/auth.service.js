@@ -1,4 +1,4 @@
-const { auth_collection } = require("../models");
+const { auth_collection } = require("../../models");
 const bcrypt = require("bcrypt");
 
 
