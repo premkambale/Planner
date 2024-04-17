@@ -17,6 +17,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border-top: 2px solid #05838A;
+        font-size: 8pt;
     }
 
     .footerwrapper .footer span{

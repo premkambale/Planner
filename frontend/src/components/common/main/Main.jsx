@@ -4,6 +4,9 @@ import Header from "../header/Header";
 import Sidebar from "./../sidebar/Sidebar";
 import Footer from "../footer/Footer";
 import './Main.css'
+import Project from './../../user_components/projects/Project';
+import Members from "../../user_components/members/Members";
+import AllTasks from "../../user_components/alltasks/AllTasks";
 
 function Main() {
   return (
@@ -17,7 +20,9 @@ function Main() {
         </div>
         <div className="bodycontent">
           <Routes>
-            <Route></Route>
+          <Route path="main/projects" element={<Project />} />
+          <Route path="main/members" element={<Members />} />
+          <Route path="main/alltasks" element={<AllTasks />} />
           </Routes>
         </div>
       </div>
