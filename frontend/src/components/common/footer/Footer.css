@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width:1024px){
+
+    .footerwrapper{
+        width: 100%;
+    }
+
+    .footerwrapper .footer{
+        height: 5vh;
+        width: 100%;
+        background-color: #edf8fd;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 2px 0px , rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footerwrapper .footer span{
+        display: block;
+    }
+
+}
