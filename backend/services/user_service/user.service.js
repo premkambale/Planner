@@ -2,7 +2,7 @@ const { auth_collection } = require("../../models");
 
 
 const find_all_users = async () => {
-return await auth_collection.find();
+return await auth_collection.find().select(['-projects','-password','-createdAt','-updatedAt','-__v']);
 }
 
 
