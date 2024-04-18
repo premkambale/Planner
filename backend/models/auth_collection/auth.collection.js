@@ -22,13 +22,12 @@ const user_regration_schema = mongoose.Schema({
     enum: ['USER', 'ADMIN'],
     default: 'ADMIN'
   },
-  projects: [
+  created_projects: [
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "projects"
     }
   ]
-
 }, {
   timestamps: true,
 }

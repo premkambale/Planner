@@ -4,21 +4,21 @@ const mongoose = require("mongoose");
 const project_collection = mongoose.Schema({
     projectName: {
         type: String,
-        require: true
+        require
     },
-    projectDesctiption: {
+    projectDescription: {
         type: String,
-        require: true
+        require
     },
     projectStartdate: {
         type: Date,
         default: Date.now(),
-        require: true
+        require
     },
     projectEnddate: {
         type: Date,
         default: Date.now(),
-        require: true
+        require
     }
 })
 
