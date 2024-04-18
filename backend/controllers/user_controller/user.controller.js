@@ -31,7 +31,7 @@ const get_all_users = async (req, res) => {
 
 const get_user_by_id = async (req, res) => {
     try {
-        const user = await user_services.find_user_by_id(req);
+        const user = await user_services.find_user_by_param_id(req);
         if (user) {
             res.send({
                 success: true,
