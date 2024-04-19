@@ -1,9 +1,10 @@
-import { urls } from "../../../../constants/api/ApiUrlConstants";
+import { URL } from "../../../../constants/api/ApiUrlConstants";
 import { LOGIN_POST } from "../../../common/httpmethods/HttpMethods";
 import { useState } from "react";
 import {useNavigate } from 'react-router-dom'
 
 import "../login/login.css";
+
 
 const Login = () => {
 
@@ -37,7 +38,7 @@ const Login = () => {
                 password : userData?.password
             }
 
-            const userAuth = await LOGIN_POST(urls?.login , bodyToSend)    
+            const userAuth = await LOGIN_POST(URL?.login , bodyToSend)    
 
             if(userAuth?.success){
                 navigate("/main")

@@ -35,7 +35,7 @@ const Sidebar = () => {
         <div className="menulist">
           <div className="menus">
             <ul>
-              <Link to="main/project">
+              <Link to="project">
               <li className="menubar">
                 <div>
                   <GoProject />
@@ -46,7 +46,7 @@ const Sidebar = () => {
                
               </li>
               </Link>
-              <Link to="main/members">
+              <Link to="members">
               <li className="menubar">
                 <div>
                   <IoIosPerson />
@@ -56,7 +56,7 @@ const Sidebar = () => {
                 }
               </li>
               </Link>
-              <Link to="main/alltasks">
+              <Link to="alltasks">
               <li className="menubar">
                 <div>
                   <GoTasklist />

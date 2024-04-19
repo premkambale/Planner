@@ -1,14 +1,16 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route , redirect , Navigate } from "react-router-dom";
 
 import Header from "../header/Header";
 import Sidebar from "./../sidebar/Sidebar";
 import Footer from "../footer/Footer";
-import './Main.css'
-import Project from './../../user_components/projects/Project';
+import "./Main.css";
+import Project from "./../../user_components/projects/Project";
 import Members from "../../user_components/members/Members";
 import AllTasks from "../../user_components/alltasks/AllTasks";
 
 function Main() {
+  const token = sessionStorage.getItem("appToken");
+
   return (
     <section className="mainpage">
       <div className="header-section">
@@ -19,11 +21,18 @@ function Main() {
           <Sidebar />
         </div>
         <div className="bodycontent">
-          <Routes>
-          <Route path="main/projects" element={<Project />} />
-          <Route path="main/members" element={<Members />} />
-          <Route path="main/alltasks" element={<AllTasks />} />
-          </Routes>
+          {token ?
+            <Routes>
+              <Route path="/" element={<Navigate to="projects" />} />
+              <Route path="/projects" element={<Project />} />
+              <Route path="/members" element={<Members />} />
+              <Route path="/alltasks" element={<AllTasks />} />
+            </Routes>
+
+            :
+
+            redirect('/planner')
+          }
         </div>
       </div>
 
