@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width:1024px){
+    .headerwrapper{
+        width: 100%;
+    }
+
+    .headerwrapper .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headerwrapper .header .main-logo{
+        width: 50%;
+        padding-left: 1%;
+    }
+
+    .headerwrapper .header .main-logo span{
+        font-weight: 700;
+        font-size: 14pt;
+    }
+
+    .headerwrapper .header .user-profile{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1%;
+        padding-right: 1%;
+    }
+
+    .headerwrapper .header .user-image{
+        height: 8vh;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headerwrapper .header .user-image img {
+        display: block;
+        height: 90%;
+        width: 80%;
+        border: 1px solid #000000;
+        border-radius: 50%;
+    }
+
+    .headerwrapper .header .user-profile .username{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .headerwrapper .header .user-profile .username .name{
+        font-size: 10pt;
+        font-weight: 700;
+    }
+
+    .headerwrapper .header .user-profile .username .role{
+        font-size: 7pt;
+        font-weight: 500;
+    }
+
+}

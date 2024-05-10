@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width : 1024px) {
+
+    @import url("https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap");
+
+    :root {
+        --c-primary: #b2b377;
+        --p-8-16: 8px 16px;
+        --m-8-0: 8px 0;
+    }
+
+    .login-wrapper {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../../assets/loginassets/loginbg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .login-wrapper .leftside {
+        width: 50%;
+        height: 100%;
+    }
+
+    .login-wrapper .rightside {
+        width: 50%;
+        height: 100%;
+    }
+
+
+    .login-wrapper .login-container {
+
+        height: 85vh;
+        padding: 40px 20px;
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .login-wrapper .login-content {
+        backdrop-filter: blur(6px);
+        border: 2px solid #d2d18080;
+        -webkit-box-shadow: -1px -1px 30px -8px rgba(0, 0, 0, 0.9);
+        -moz-box-shadow: -1px -1px 30px -8px rgba(0, 0, 0, 0.9);
+        box-shadow: -1px -1px 30px -8px rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        border-radius: 1.6rem;
+        color: white;
+        width: 60%;
+    }
+
+    .login-wrapper .logo {
+        font-size: 2rem;
+    }
+
+    .login-wrapper h2 {
+        font-size: 3rem;
+        line-height: 2.8;
+    }
+
+    .login-wrapper .login-form {
+       width: 100%;
+    }
+
+    .login-wrapper .login-form .inputwrapper{
+        width: 100%;
+    }
+
+    .login-wrapper .login-form input {
+        width: 90%;
+        height: 35px;
+        background-color: #ffffff40;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        margin:2% 0;
+        padding: 0 5px;
+    }
+
+    .login-wrapper input::placeholder {
+        color: #fff;
+    }
+
+    .login-wrapper button.loginuser {
+        height: 30px;
+        width: 90%;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--c-primary);
+        color: #163020;
+        font-weight: 600;
+    }
+
+    .login-wrapper .login-netoworks,
+    .login-wrapper .login-or {
+        margin: 16px 0;
+    }
+
+    .login-wrapper hr {
+        width: 70%;
+        border-color: #ffffff40;
+    }
+
+    .login-wrapper .login-icons {
+        text-align: left;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+        max-width: 260px;
+    }
+
+    .login-wrapper .login-icons li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid #ffffff40;
+        padding: var(--p-8-16);
+        margin: var(--m-8-0);
+        border-radius: 4px;
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+
+    .login-wrapper .login-icons li>[type="logo"] {
+        margin-right: 8px;
+    }
+
+    .login-wrapper .login-footer {
+        position: absolute;
+        color: var(--c-primary);
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* @media screen and (min-width: 400px) {
+    .login-wrapper .login-content_header span.logo {
+      display: none;
+    }
+    .login-wrapper .login-container {
+      padding: 0px;
+      height: 100vh;
+    }
+    .login-wrapper .login-content {
+      position: absolute;
+      right: 0px;
+      width: 500px;
+      height: 100%;
+      max-height:100%;
+      border: 0;
+      border-left: 2px solid #d2d18080;
+      border-radius: 0;
+      max-width: 50%;
+    }
+    .login-wrapper .login-content {
+      animation: fRight 1s ease-in-out;
+    }
+    @keyframes fRight {
+      from {
+        opacity: 0;
+        transform: translateX(300px);
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .login-wrapper .login-footer {
+      left: 20px;
+      transform: none;
+    }
+  } */

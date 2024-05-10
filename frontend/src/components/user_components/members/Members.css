@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width : 1024px){
+
+    .members-wrapper{
+        width: 100%;
+        padding: 1%;
+    }
+
+    .members-wrapper .memberstable{
+        width: 100%;
+    }
+
+}

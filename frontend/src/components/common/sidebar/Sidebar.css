@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width:1024px){
+    .sidebarwrapper.sidebarsmall{
+        height: 100%;
+        width: 3vw;
+        box-shadow: 0 0 6px 1px rgba(34,55,123,.2);
+    }
+
+    .sidebarwrapper.sidebarfull{
+        height: 100%;
+        width: 10vw;
+        box-shadow: 0 0 6px 1px rgba(34,55,123,.2);
+    }
+
+    .sidebarwrapper .sidebar{
+        width: 100%;
+        padding:2% 0;
+    }
+
+    .sidebarwrapper .sidebar .togglebutton{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 2%;
+    }
+
+    .sidebarwrapper .sidebar .togglebutton div{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    .sidebarwrapper .sidebar .togglebutton button{
+        height: 30px;
+        width: 30px;
+        border: none;
+        border-radius: 50%;
+        background-image: linear-gradient(to bottom, #87cae9, #a2d6ee, #bce1f3, #d5edf8, #edf8fd);
+    }
+
+    .sidebar .menulist{
+        padding-top: 5px;
+    }
+
+    .sidebar .menulist .menus{
+        padding-left: 8px;
+        padding-top: 2%;
+    }
+
+    .sidebar .menulist .menus .menubar{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 2px;
+    }
+
+    .sidebar .menulist .menus .menubar .menuname{
+        height: 100%;
+        padding-bottom: 3px;
+        font-size: 9pt;
+    }
+}
