@@ -1,5 +1,5 @@
 
-const { auth_services} = require("../../services")
+const { auth_services } = require("../../services")
 const { auth_collection } = require("../../models")
 const jwt = require("jsonwebtoken")
 
@@ -32,17 +32,19 @@ const register = async (req, res) => {
 
 // --------------------------------------------------------------Login User-------------------------------------------------------------------
 const login = async (req, res) => {
+    console.log(`${req.ip}`.red)
     const user = await auth_services.is_user_registered(req);
 
     if (user) {
         const registered_user = await auth_services.find_user(req);
         const mathedPassword = await auth_services.validate_passsword(req.body.password, registered_user.password);
         if (mathedPassword) {
-            const token =  jwt.sign({ userId: registered_user._id, access_role: registered_user.role }, process.env.SECRETE)
+            const token = jwt.sign({ userId: registered_user._id, access_role: registered_user.role }, process.env.SECRETE)
             res.send({
                 message: "Login Successfull.",
                 success: true,
                 token: token,
+                ip: req.ip,
                 role: registered_user.role
             })
         }
